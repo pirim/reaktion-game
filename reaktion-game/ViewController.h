@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet UIImageView *reaktionsBild;
+    IBOutlet UILabel *reaktionsLabel;
+    NSTimer *reaktionsTimer;
+    float reaktionsZeit;
+    
+}
 
+-(IBAction)startGamne:(id)sender;
+-(IBAction)reactNow:(id)sender;
 
 @end
 
