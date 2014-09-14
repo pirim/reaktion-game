@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reaktinszeit: %.3f" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-8u-m17">
-                                <rect key="frame" x="16" y="60" width="288" height="21"/>
+                                <rect key="frame" x="16" y="95" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,22 +34,51 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldK-wF-oOd">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-PO-D0G">
-                                <rect key="frame" x="121" y="393" width="79" height="30"/>
-                                <state key="normal" title="Start Game">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDJ-t8-tfR">
+                                <rect key="frame" x="67" y="400" width="187" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Wiederholen" backgroundImage="button.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startGamne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="emT-ga-aoS"/>
+                                    <action selector="repeat:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1xl-ov-mVq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auf Viereck klicken, sobald es die Farbe wechelt." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jus-LB-f2f">
+                                <rect key="frame" x="0.0" y="522" width="320" height="38"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbu-oF-CFk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-PO-D0G">
+                                        <rect key="frame" x="62" y="241" width="197" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Start Game" backgroundImage="button.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startGamne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="emT-ga-aoS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="ireactedButton" destination="JzC-Wh-UX8" id="IXv-4R-Sgh"/>
                         <outlet property="reaktionsBild" destination="ldK-wF-oOd" id="wmP-c8-LIl"/>
                         <outlet property="reaktionsLabel" destination="jLs-8u-m17" id="iRc-WL-rXe"/>
+                        <outlet property="repeatBtn" destination="kDJ-t8-tfR" id="tej-Ft-F2o"/>
+                        <outlet property="starterView" destination="Pbu-oF-CFk" id="OKO-WK-d4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -57,4 +86,7 @@
             <point key="canvasLocation" x="375" y="582"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button.png" width="640" height="320"/>
+    </resources>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1063E23519C592600030FB1D /* normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1063E23319C592600030FB1D /* normal.jpg */; };
 		1063E23619C592600030FB1D /* now.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1063E23419C592600030FB1D /* now.jpg */; };
+		1063E23819C59A460030FB1D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1063E23719C59A460030FB1D /* button.png */; };
 		A7E58F7819C2F9EA005FD586 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E58F7719C2F9EA005FD586 /* main.m */; };
 		A7E58F7B19C2F9EA005FD586 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E58F7A19C2F9EA005FD586 /* AppDelegate.m */; };
 		A7E58F7E19C2F9EA005FD586 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E58F7D19C2F9EA005FD586 /* ViewController.m */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1063E23319C592600030FB1D /* normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal.jpg; sourceTree = "<group>"; };
 		1063E23419C592600030FB1D /* now.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = now.jpg; sourceTree = "<group>"; };
+		1063E23719C59A460030FB1D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		A7E58F7219C2F9EA005FD586 /* reaktion-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reaktion-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E58F7619C2F9EA005FD586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E58F7719C2F9EA005FD586 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				1063E23319C592600030FB1D /* normal.jpg */,
+				1063E23719C59A460030FB1D /* button.png */,
 				1063E23419C592600030FB1D /* now.jpg */,
 			);
 			name = img;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1063E23619C592600030FB1D /* now.jpg in Resources */,
+				1063E23819C59A460030FB1D /* button.png in Resources */,
 				A7E58F8119C2F9EA005FD586 /* Main.storyboard in Resources */,
 				A7E58F8619C2F9EA005FD586 /* LaunchScreen.xib in Resources */,
 				1063E23519C592600030FB1D /* normal.jpg in Resources */,

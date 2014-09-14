@@ -10,15 +10,21 @@
 
 @interface ViewController : UIViewController{
     
+    IBOutlet UIView *starterView;
     IBOutlet UIImageView *reaktionsBild;
     IBOutlet UILabel *reaktionsLabel;
-    NSTimer *reaktionsTimer;
-    float reaktionsZeit;
+    IBOutlet UIButton *ireactedButton;
+    IBOutlet UIButton *repeatBtn;
     
+    NSTimer *reaktionsTimer;
+    
+    float reaktionsZeit;
+    BOOL checkCheat;
 }
 
 -(IBAction)startGamne:(id)sender;
 -(IBAction)reactNow:(id)sender;
+-(IBAction)repeat:(id)sender;
 
 @end
 
