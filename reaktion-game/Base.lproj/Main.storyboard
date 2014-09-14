@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reaktinszeit: %.3f" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-8u-m17">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reaktinszeit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-8u-m17">
                                 <rect key="frame" x="16" y="95" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,11 +42,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="repeat:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1xl-ov-mVq"/>
+                                    <action selector="repeat:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v40-sN-gyV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auf Viereck klicken, sobald es die Farbe wechelt." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jus-LB-f2f">
-                                <rect key="frame" x="0.0" y="522" width="320" height="38"/>
+                                <rect key="frame" x="0.0" y="530" width="320" height="38"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TI-PO-D0G">
-                                        <rect key="frame" x="62" y="241" width="197" height="85"/>
+                                        <rect key="frame" x="60" y="241" width="201" height="85"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Start Game" backgroundImage="button.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,7 +78,7 @@
                         <outlet property="reaktionsBild" destination="ldK-wF-oOd" id="wmP-c8-LIl"/>
                         <outlet property="reaktionsLabel" destination="jLs-8u-m17" id="iRc-WL-rXe"/>
                         <outlet property="repeatBtn" destination="kDJ-t8-tfR" id="tej-Ft-F2o"/>
-                        <outlet property="starterView" destination="Pbu-oF-CFk" id="OKO-WK-d4M"/>
+                        <outlet property="starterView" destination="Pbu-oF-CFk" id="E6J-IP-ID9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
